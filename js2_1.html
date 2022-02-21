@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width, initial scale=1.0">
+<meta name="author" content="João">
+</head>
+<body>
+
+    <script>
+
+
+let x = parseInt(prompt("Quantos números quer adicionar?"))
+var z = []
+
+var i = 0
+
+while (i < x){
+    var y = prompt('Digite o ' + (i +1) + 'º Número')
+
+    z.push(parseInt(y)) 
+
+    i++
+}
+
+let soma =0
+
+for(var j =0; j < z.length; j++){
+    soma = soma + z[j]
+}
+
+alert('A Soma total é: ' + soma)
+
+let me= soma/x
+
+alert(`a media é ${me}`)
+
+
+var o= z.slice(2)
+var e= z.slice(1,2)
+var t= z.slice(0,1)
+
+document.write(`${e**2} e ${t**2} e ${o**2}`)
+
+
+</script>
+
+</body>
+</html>

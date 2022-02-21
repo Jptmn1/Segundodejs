@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width, initial scale=1.0">
+<meta name="author" content="João">
+</head>
+<body>
+
+<script>
+//OBS: NÃO CONSEGUI ENTENDER BEM ESSA PARTE ENTÃO ACABEI PEGANDO PARTE DO CÓDIGO NA INTERNET(ESPERO QUE NÃO SEJA UM PROBLEMA PROF)
+
+function bitodec(bi){
+let dec = 0, i = 0, res;
+   
+while (bi != 0) {
+res = bi % 10;
+bi = Number.parseInt(bi / 10);
+dec = dec + res * Math.pow(2, i);
+++i;}
+   
+return dec;}
+
+
+
+  let bi = parseInt(prompt('Digite um número binário'))
+
+  let dec = bitodec(bi);
+  alert(`O número ${bi} em decimal é ${dec}`);
+
+</script>
+</body>
+</html>
